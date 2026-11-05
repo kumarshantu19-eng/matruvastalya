@@ -3,142 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Care Foundation | Empowering Communities & Nature</title>
+    <title>Matruvastalya - Empowering Lives & Protecting Nature</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
 
-    <!-- Top Announcement Bar -->
+    <!-- Announcement Bar -->
     <div class="bg-emerald-700 text-white text-xs sm:text-sm py-2 px-4 text-center">
-        <span>📢 Join our upcoming Community Health & Tree Plantation Drive this Saturday! <a href="get-involved.html" class="underline font-semibold ml-1">Sign up now</a></span>
+        🎉 Join our upcoming Community Health & Tree Plantation Drive this Saturday! <a href="#contact" class="underline font-semibold ml-2">Contact Us</a>
     </div>
 
-    <!-- Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex items-center space-x-2">
-                    <i class="fa-solid fa-hands-holding-child text-emerald-600 text-2xl"></i>
-                    <span class="font-bold text-xl text-slate-900 tracking-tight">Global Care</span>
-                </div>
-                <div class="hidden md:flex space-x-8 items-center font-medium">
-                    <a href="index.html" class="text-emerald-600 border-b-2 border-emerald-600 pb-1">Home</a>
-                    <a href="causes.html" class="text-slate-600 hover:text-emerald-600 transition">Our Causes</a>
-                    <a href="get-involved.html" class="text-slate-600 hover:text-emerald-600 transition">Get Involved</a>
-                    <a href="donate.html" class="bg-emerald-600 text-white px-5 py-2 rounded-full hover:bg-emerald-700 transition shadow-sm">Donate Now</a>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-slate-700 focus:outline-none">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <div class="text-2xl font-bold text-emerald-600 flex items-center space-x-2">
+                <i class="fa-solid fa-hands-holding-child"></i>
+                <span>Matruvastalya</span>
             </div>
-        </div>
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-3">
-            <a href="index.html" class="block text-emerald-600 font-medium">Home</a>
-            <a href="causes.html" class="block text-slate-600">Our Causes</a>
-            <a href="get-involved.html" class="block text-slate-600">Get Involved</a>
-            <a href="donate.html" class="block bg-emerald-600 text-white text-center py-2 rounded-lg">Donate Now</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="relative bg-slate-900 text-white overflow-hidden">
-        <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb9?auto=format&fit=crop&q=80&w=1600');"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 text-center">
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">Empowering Lives, Protecting Our Planet</h1>
-            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-200 mb-10">We bridge gaps in education, healthcare, environmental preservation, and animal welfare to build a compassionate, sustainable future.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="donate.html" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition">Support Our Mission</a>
-                <a href="causes.html" class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white font-bold px-8 py-4 rounded-xl transition">Explore Our Work</a>
-            </div>
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#home" class="hover:text-emerald-600">Home</a>
+                <a href="#about" class="hover:text-emerald-600">About Us</a>
+                <a href="#causes" class="hover:text-emerald-600">Our Causes</a>
+                <a href="#get-involved" class="hover:text-emerald-600">Get Involved</a>
+                <a href="#contact" class="hover:text-emerald-600">Contact</a>
+            </nav>
+            <a href="#donate" class="bg-emerald-600 text-white px-5 py-2 rounded-full font-medium hover:bg-emerald-700 transition">Donate Now</a>
         </div>
     </header>
 
-    <!-- Impact Counters -->
-    <section class="bg-emerald-800 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-                <p class="text-3xl sm:text-4xl font-black mb-1">15,000+</p>
-                <p class="text-emerald-200 text-sm">Children Educated</p>
-            </div>
-            <div>
-                <p class="text-3xl sm:text-4xl font-black mb-1">50,000+</p>
-                <p class="text-emerald-200 text-sm">Patients Treated</p>
-            </div>
-            <div>
-                <p class="text-3xl sm:text-4xl font-black mb-1">100k+</p>
-                <p class="text-emerald-200 text-sm">Trees Planted</p>
-            </div>
-            <div>
-                <p class="text-3xl sm:text-4xl font-black mb-1">8,500+</p>
-                <p class="text-emerald-200 text-sm">Animals Rescued</p>
+    <!-- Hero Section -->
+    <section id="home" class="bg-emerald-900 text-white py-20 text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Empowering Communities, Healing the Planet</h1>
+            <p class="text-lg md:text-xl text-emerald-100 mb-8">We work tirelessly across Education, Healthcare, Environment, and Animal Welfare to bring positive change.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#causes" class="bg-white text-emerald-900 px-6 py-3 rounded-full font-bold hover:bg-emerald-50 transition">Explore Causes</a>
+                <a href="#donate" class="border-2 border-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-emerald-900 transition">Support Us</a>
             </div>
         </div>
     </section>
 
-    <!-- Core Pillars Overview -->
-    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-xs uppercase tracking-widest text-emerald-600 font-bold mb-2">What We Do</h2>
-            <h3 class="text-3xl font-bold text-slate-900">Four Pillars of Sustainable Impact</h3>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Education -->
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
-                <h4 class="font-bold text-xl mb-2">Education</h4>
-                <p class="text-slate-600 text-sm mb-4">Providing school supplies, tuition support, and digital labs for underprivileged children.</p>
-                <a href="causes.html" class="text-emerald-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
+    <!-- About Us Section -->
+    <section id="about" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About Matruvastalya</h2>
+                <p class="text-gray-600 mb-4">Matruvastalya is dedicated to uplifting underprivileged communities and protecting our natural ecosystem. Founded with a vision of compassion and service, we strive to bridge gaps in education and healthcare while championing environmental and animal welfare.</p>
+                <p class="text-gray-600">Our mission is to create a sustainable, inclusive society where every child gets education, every sick person gets care, and nature thrives.</p>
             </div>
-            <!-- Health -->
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-heart-pulse"></i></div>
-                <h4 class="font-bold text-xl mb-2">Healthcare</h4>
-                <p class="text-slate-600 text-sm mb-4">Running mobile health clinics, medical check-up camps, and wellness education in rural zones.</p>
-                <a href="causes.html" class="text-emerald-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
-            </div>
-            <!-- Environment -->
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-seedling"></i></div>
-                <h4 class="font-bold text-xl mb-2">Environment</h4>
-                <p class="text-slate-600 text-sm mb-4">Executing massive reforestation drives, clean water initiatives, and local waste cleanup campaigns.</p>
-                <a href="causes.html" class="text-emerald-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
-            </div>
-            <!-- Animals -->
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-paw"></i></div>
-                <h4 class="font-bold text-xl mb-2">Animal Welfare</h4>
-                <p class="text-slate-600 text-sm mb-4">Operating emergency rescue shelters, stray vaccination drives, and safe adoption networks.</p>
-                <a href="causes.html" class="text-emerald-600 font-semibold text-sm hover:underline">Learn more &rarr;</a>
+            <div class="bg-emerald-100 p-8 rounded-2xl shadow-inner border border-emerald-200">
+                <h3 class="text-2xl font-bold text-emerald-900 mb-4">Our Vision & Values</h3>
+                <ul class="space-y-3 text-emerald-800 font-medium">
+                    <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Transparent & Impact-Driven Operations</li>
+                    <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Grassroots Community Engagement</li>
+                    <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Sustainable Environmental Protection</li>
+                    <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Compassion for All Living Beings</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center space-x-2 text-white">
-                <i class="fa-solid fa-hands-holding-child text-emerald-500 text-2xl"></i>
-                <span class="font-bold text-xl">Global Care Foundation</span>
+    <!-- Causes Section -->
+    <section id="causes" class="py-16 bg-gray-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Our Core Pillars</h2>
+                <p class="text-gray-600 mt-2">How we are making an impact every single day.</p>
             </div>
-            <p class="text-sm">&copy; 2026 Global Care Foundation. Registered Non-Profit Organization.</p>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook text-lg"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-twitter text-lg"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram text-lg"></i></a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Education -->
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <div class="text-emerald-600 text-3xl mb-4"><i class="fa-solid fa-book-open"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Education</h3>
+                    <p class="text-gray-600 text-sm">Providing quality learning resources, scholarships, and schooling support for underprivileged children.</p>
+                </div>
+                <!-- Healthcare -->
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <div class="text-emerald-600 text-3xl mb-4"><i class="fa-solid fa-hospital"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Healthcare</h3>
+                    <p class="text-gray-600 text-sm">Organizing health check-up camps, mobile clinics, and distributing essential medicines in rural areas.</p>
+                </div>
+                <!-- Environment -->
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <div class="text-emerald-600 text-3xl mb-4"><i class="fa-solid fa-seedling"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Environment</h3>
+                    <p class="text-gray-600 text-sm">Conducting massive tree plantation drives, water conservation projects, and cleanliness campaigns.</p>
+                </div>
+                <!-- Animal Welfare -->
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <div class="text-emerald-600 text-3xl mb-4"><i class="fa-solid fa-paw"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Animal Welfare</h3>
+                    <p class="text-gray-600 text-sm">Running rescue shelters, emergency medical aid, and vaccination/adoption programs for stray animals.</p>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Get Involved</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-8">You don't need to change the world alone. Join our community of volunteers and changemakers today.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+                <h3 class="text-xl font-bold text-emerald-700 mb-2">Become a Volunteer</h3>
+                <p class="text-gray-600 text-sm mb-4">Give your time and skills to our field operations, teaching programs, or drives.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+                <h3 class="text-xl font-bold text-emerald-700 mb-2">Partner with Us</h3>
+                <p class="text-gray-600 text-sm mb-4">Collaborate as corporate partners, educational institutions, or community groups.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+                <h3 class="text-xl font-bold text-emerald-700 mb-2">Spread the Word</h3>
+                <p class="text-gray-600 text-sm mb-4">Share our mission on social media and inspire others to support our cause.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="py-16 bg-emerald-800 text-white text-center px-4">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Support Our Cause</h2>
+            <p class="text-emerald-100 mb-6">Your small contribution can light up a child's future, heal a stray animal, or plant a sapling.</p>
+            <div class="bg-white text-gray-900 p-6 rounded-xl inline-block shadow-lg">
+                <p class="font-bold text-lg mb-2">Bank / UPI Donation Details</p>
+                <p class="text-sm text-gray-600">UPI ID: <span class="font-semibold text-emerald-700">matruvastalya@upi</span></p>
+                <p class="text-sm text-gray-600 mt-1">Account Name: Matruvastalya Trust</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-emerald-400 mb-3">Matruvastalya</h3>
+                <p class="text-gray-400 text-sm">Working together for a better, compassionate, and greener tomorrow.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#about" class="hover:text-white">About Us</a></li>
+                    <li><a href="#causes" class="hover:text-white">Our Causes</a></li>
+                    <li><a href="#get-involved" class="hover:text-white">Get Involved</a></li>
+                    <li><a href="#donate" class="hover:text-white">Donate</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3">Contact Us</h4>
+                <p class="text-gray-400 text-sm"><i class="fa-solid fa-envelope mr-2"></i> info@matruvastalya.org</p>
+                <p class="text-gray-400 text-sm mt-1"><i class="fa-solid fa-phone mr-2"></i> +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
+            &copy; 2026 Matruvastalya NGO. All Rights Reserved.
         </div>
     </footer>
 
-    <script>
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
-    </script>
 </body>
 </html>
